@@ -28,11 +28,11 @@ namespace ArrayApp
                     numArray[i] = int.Parse(Console.ReadLine());
                 }
 
-                //Propt the user to enter the number they want to test
-                Console.WriteLine("Enter a number to see how many are above and below it in the array");
+                //Propt the user to enter the integer they want to test
+                Console.WriteLine("Enter an integer to see how many are above and below it in the array");
                 try
                 {
-                    //Set user input number
+                    //Set user input integer
                     num = int.Parse(Console.ReadLine());
 
                     //Figure out count for Above and Below 
@@ -57,17 +57,17 @@ namespace ArrayApp
                 //If the user inputs anything other than an integer, it will fail with this note
                 catch
                 {
-                    Console.WriteLine("Please enter an integer");
+                    Console.WriteLine("Please enter an integer next time");
                 }
             }
             else if (UIArray == 'N' || UIArray == 'n')
             {
-                //Propt the user to enter the number they want to test
-                Console.WriteLine("Enter a number to see how many are above and below it in the array");
+                //Propt the user to enter the integer they want to test
+                Console.WriteLine("Enter an integer to see how many are above and below it in the array");
                 
                 try
                 {
-                    //Set user input number
+                    //Set user input integer
                     num = int.Parse(Console.ReadLine());
 
                     //Figure out count for Above and Below 
@@ -92,13 +92,13 @@ namespace ArrayApp
                 //If the user inputs anything other than an integer, it will fail with this note
                 catch
                 {
-                    Console.WriteLine("Please enter an integer");
+                    Console.WriteLine("Please enter an integer next time");
                 }
             }
             //If the user inputs anything other than a y or n 
             else
             {
-                Console.WriteLine("Please enter either a Y for yes or N for no");
+                Console.WriteLine("Please enter either a Y for yes or N for no next time");
             }
         }
     }

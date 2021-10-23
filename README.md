@@ -9,7 +9,8 @@
 
 For example: if strArr is ["1,093,222.04"] then your program should return the string true, but if the input were ["1,093,22.04"] then your program should return the string   false. The input may contain characters other than digits.                                                 
 
-  Examples                                                     
+  Examples     
+  
     Input 1: ["0.232567"]                                        
     Output 1: true                                               
                                                              
@@ -23,9 +24,12 @@ For example: if strArr is ["1,093,222.04"] then your program should return the s
   Your program should return the number of ways 2 students can be seated next to each other. This means 1 student is on the left and 1 student on the right, or 1 student is directly above or below the other student.
 
   K will range from 2 to 24 and will always be an even number. After K, the number of occupied desks in the array can range from 0 to K. 
-        Sample Test Cases
+        
+  Example
+  
         Input:6, 4
         Output:4
+        
         Input:8, 1, 8
         Output:6
   - //In Progress

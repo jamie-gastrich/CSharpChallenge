@@ -4,7 +4,10 @@
 #2 Rotate the characters in a string by a given input and have the overflow appear at the beginning, e.g. “MyString” rotated by 2 is “ngMyStri”.
   - See RotateCharApp.cs
 
-#3  Formatted Number
+#3 Codeland Username Validation
+  - CodelandUsernameValidation.cs
+
+#4  Formatted Number
 
   Have the function FormattedNumber(strArr) take the strArr parameter being passed, which will only contain a single element, and return the string true if it is a valid number that contains only digits with properly placed decimals & commas, otherwise return the string false.                   
 
@@ -19,7 +22,7 @@ For example: if strArr is ["1,093,222.04"] then your program should return the s
     Output 2: false
   - //In Progress
 
-#4 Seating Students
+#5 Seating Students
 
   Have the function SeatingStudents(arr) read the array of integers stored in arr which will be in the following format: [K, r1, r2, r3, ...] where K represents the number of desks in a classroom, and the rest of the integers in the array will be in sorted order and will represent the desks that are already occupied.All of the desks will be arranged in 2 columns, where desk #1 is at the top left, desk #2 is at the top right, desk #3 is below #1, desk #4 is below #2, etc. 
 
@@ -35,6 +38,3 @@ For example: if strArr is ["1,093,222.04"] then your program should return the s
         Input:8, 1, 8
         Output:6
   - //In Progress
-
-#5 Codeland Username Validation
-  - CodelandUsernameValidation.cs

@@ -36,7 +36,7 @@ class MainClass {
             }
           else
             {
-              return "false";
+              return "False";
             }
         }
       }

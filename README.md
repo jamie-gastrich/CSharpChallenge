@@ -20,7 +20,7 @@ For example: if strArr is ["1,093,222.04"] then your program should return the s
                                                              
     Input 2: ["2,567.00.2"]                                      
     Output 2: false
-  - //In Progress
+  - FormattedNumber.cs
 
 #5 Seating Students
 

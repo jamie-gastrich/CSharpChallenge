@@ -1,13 +1,17 @@
-#1 Print the number of integers in an array that are above the given input and the number that are below, e.g. for the array [1, 5, 2, 1, 10] with input 6, print “above: 1, below: 4”.
+## #1 ##
+Print the number of integers in an array that are above the given input and the number that are below, e.g. for the array [1, 5, 2, 1, 10] with input 6, print “above: 1, below: 4”.
   - See ArrayApp.cs
 
-#2 Rotate the characters in a string by a given input and have the overflow appear at the beginning, e.g. “MyString” rotated by 2 is “ngMyStri”.
+## #2 ##
+Rotate the characters in a string by a given input and have the overflow appear at the beginning, e.g. “MyString” rotated by 2 is “ngMyStri”.
   - See RotateCharApp.cs
 
-#3 Codeland Username Validation
+## #3 ##
+Codeland Username Validation
   - CodelandUsernameValidation.cs
 
-#4  Formatted Number
+## #4 ## 
+Formatted Number
 
   Have the function FormattedNumber(strArr) take the strArr parameter being passed, which will only contain a single element, and return the string true if it is a valid number that contains only digits with properly placed decimals & commas, otherwise return the string false.                   
 
@@ -22,7 +26,8 @@ For example: if strArr is ["1,093,222.04"] then your program should return the s
     Output 2: false
   - FormattedNumber.cs
 
-#5 Seating Students
+## #5 ##
+Seating Students
 
   Have the function SeatingStudents(arr) read the array of integers stored in arr which will be in the following format: [K, r1, r2, r3, ...] where K represents the number of desks in a classroom, and the rest of the integers in the array will be in sorted order and will represent the desks that are already occupied.All of the desks will be arranged in 2 columns, where desk #1 is at the top left, desk #2 is at the top right, desk #3 is below #1, desk #4 is below #2, etc. 
 

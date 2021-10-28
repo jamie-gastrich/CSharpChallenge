@@ -16,42 +16,47 @@
 **/
 using System;
 
-class MainClass {
+class MainClass
+{
 
-  public static string CodelandUsernameValidation(string str) {
+    public static string CodelandUsernameValidation(string str)
+    {
 
-    // code goes here 
-    string Output = "True"; 
-    bool MinLength = str.Length >= 4; 
-    bool MaxLength = str.Length <= 25;
-    bool FisrtIsLetter = char.IsLetter(str[0]);
-    bool LastIsNotUnderScore = str[str.Length-1] != '_';
+        // code goes here 
+        string Output = "True";
+        bool MinLength = str.Length >= 4;
+        bool MaxLength = str.Length <= 25;
+        bool FisrtIsLetter = char.IsLetter(str[0]);
+        bool LastIsNotUnderScore = str[str.Length - 1] != '_';
 
-    if (MinLength && MaxLength && FisrtIsLetter && LastIsNotUnderScore) 
-      {
-        foreach(char x in str.ToCharArray())
+        if (MinLength && MaxLength && FisrtIsLetter && LastIsNotUnderScore)
         {
-          if (char.IsLetter(x) || char.IsNumber(x) || x.Equals('_'))
+            foreach (char x in str.ToCharArray())
             {
-            }
-          else
-            {
-              return "False";
+                if (char.IsLetter(x) || char.IsNumber(x) || x.Equals('_'))
+                {
+                }
+                else
+                {
+                    return "False";
+                }
             }
         }
-      }
-    else 
-      {
-        Output = "False";
-      }
-    
-    return Output;
+        else
+        {
+            Output = "False";
+        }
 
-  }
+        return Output;
 
-  static void Main() {  
-    // keep this function call here
-    Console.WriteLine(CodelandUsernameValidation(Console.ReadLine()));
-  } 
+    }
+
+    static void Main()
+    {
+        string Input = "aa_"; //False
+        //string Input = "u__hello_world123"; //True
+
+        Console.WriteLine(CodelandUsernameValidation(Input));
+    }
 
 }

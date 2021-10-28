@@ -55,10 +55,10 @@ Seating Students
         
   Example
   
-        Input:6, 4
-        Output:4
+        Input: {6, 4}
+        Output: 4
         
-        Input:8, 1, 8
-        Output:6
+        Input: {8, 1, 8}
+        Output: 6
         
   - See SeatingStudents.cs

@@ -1,62 +1,27 @@
-/**
-*Codeland Username Validation
-*Have the function CodelandUsernameValidation(str) take the str parameter being passed and determine if the string is a valid username according to the following rules:
-*
-*1. The username is between 4 and 25 characters.
-*2. It must start with a letter.
-*3. It can only contain letters, numbers, and the underscore character.
-*4. It cannot end with an underscore character.
-*
-*If the username is valid then your program should return the string true, otherwise return the string false.
-*Examples
-*Input: "aa_"
-*Output: false
-*Input: "u__hello_world123"
-*Output: true
-**/
 using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 
-class MainClass
+namespace FormattedNumber
 {
-
-    public static string CodelandUsernameValidation(string str)
+    class Program
     {
-
-        // code goes here 
-        string Output = "True";
-        bool MinLength = str.Length >= 4;
-        bool MaxLength = str.Length <= 25;
-        bool FisrtIsLetter = char.IsLetter(str[0]);
-        bool LastIsNotUnderScore = str[str.Length - 1] != '_';
-
-        if (MinLength && MaxLength && FisrtIsLetter && LastIsNotUnderScore)
+        public static string FormattedNumber(string[] arr)
         {
-            foreach (char x in str.ToCharArray())
-            {
-                if (char.IsLetter(x) || char.IsNumber(x) || x.Equals('_'))
-                {
-                }
-                else
-                {
-                    return "False";
-                }
-            }
+            var regex = new Regex(@"(^(\d+|\d{1,3}(,\d{3})*)(\.\d+)?$)");
+            var Matches = regex.Matches(arr[0]).OfType<Match>();
+            bool IsTrue = Matches.Any();
+
+            return IsTrue.ToString();
+
         }
-        else
+        static void Main(string[] args)
         {
-            Output = "False";
+            string[] arr = { "0.232567" };
+            //string[] arr = { "2,567.00.2" };
+            //string[] arr = { "1,093,222.04" };
+            //string[] arr = { "1,093,22.04" };
+            Console.WriteLine(FormattedNumber(arr));
         }
-
-        return Output;
-
     }
-
-    static void Main()
-    {
-        string Input = "aa_"; //False
-        //string Input = "u__hello_world123"; //True
-
-        Console.WriteLine(CodelandUsernameValidation(Input));
-    }
-
 }

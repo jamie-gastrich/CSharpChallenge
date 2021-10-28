@@ -20,10 +20,10 @@ If the username is valid then your program should return the string true, otherw
   Examples
 
     Input 1: "aa_"
-    Output 1: false
+    Output 1: False
   
     Input 2: "u__hello_world123"
-    Output 2: true
+    Output 2: True
 
   - See CodelandUsernameValidation.cs
 
@@ -37,10 +37,10 @@ For example: if strArr is ["1,093,222.04"] then your program should return the s
   Examples     
   
     Input 1: ["0.232567"]                                        
-    Output 1: true                                               
+    Output 1: True                                               
                                                              
     Input 2: ["2,567.00.2"]                                      
-    Output 2: false
+    Output 2: False
     
   - See FormattedNumber.cs
 

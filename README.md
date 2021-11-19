@@ -136,4 +136,4 @@ Example 2
 
     You have to split a pile of 3 boxes into 5 parts, so you get 3 piles of 1 box and 2 empty piles which you discard.
 
-  - In Progress
+  - See NumberOfPiles.cs

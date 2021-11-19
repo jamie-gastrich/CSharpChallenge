@@ -61,7 +61,6 @@ namespace NumberOfPiles
                 }
                 foreach (var item in array)
                 {
-                    Console.WriteLine(item);
                     if (item <= M && item > 0)
                     {
                         output++;
